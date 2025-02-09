@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio Builder</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+            color: #f0f4f8;
+        }
+
+        nav {
+            background-color: #444;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        section {
+            padding: 60px 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: #444;
+        }
+
+        .intro p, .about p, .portfolio p, .contact p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #666;
+        }
+
+        .intro h2, .about h2, .portfolio h2, .contact h2 {
+            text-align: center;
+        }
+
+        .about div {
+            background-color: #f8f8f8;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .portfolio .project {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .portfolio .project img {
+            width: 100%;
+            max-width: 500px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio .project img:hover {
+            transform: scale(1.05);
+        }
+
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact input,
+        .contact textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+            background-color: #f9f9f9;
+        }
+
+        .contact input:focus,
+        .contact textarea:focus {
+            outline: none;
+            border-color: #333;
+            box-shadow: 0 0 5px rgba(51, 51, 51, 0.5);
+        }
+
+        .contact button {
+            background-color: #333;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            font-size: 18px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact button:hover {
+            background-color: #555;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        .footer p {
+            font-size: 16px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Student Portfolio Builder</h1>
+        <p>Created by 4 students: Student 1, Student 2, Student 3, Student 4</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact Me</a>
+    </nav>
+
+    <section id="home" class="intro">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Welcome to the portfolio of four students! Here, we share our individual works, experiences, and projects. Explore our pages to know more about us and our journey in web development.</p>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>We are a group of students working together on various projects and learning about web development. Each of us has a unique skill set, and we believe that working as a team brings out the best in all of us. Below are our personal introductions:</p>
+        
+        <div>
+            <h3>Student 1</h3>
+            <p>A passionate web developer with skills in HTML, CSS, and JavaScript. I love creating interactive websites and learning new technologies.</p>
+        </div>
+
+        <div>
+            <h3>Student 2</h3>
+            <p>An aspiring designer with a keen eye for user experience and graphic design. I enjoy crafting beautiful and functional UI/UX designs.</p>
+        </div>
+
+        <div>
+            <h3>Student 3</h3>
+            <p>A creative thinker with expertise in front-end development and responsive design. I’m passionate about creating seamless user experiences across all devices.</p>
+        </div>
+
+        <div>
+            <h3>Student 4</h3>
+            <p>A backend enthusiast focused on databases, server-side logic, and API development. I love making systems work smoothly behind the scenes.</p>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <h2>Portfolio</h2>
+        <p>Here are some of the projects we have worked on:</p>
+
+        <div class="project">
+            <h3>Project 1: Web Application</h3>
+            <img src="https://via.placeholder.com/500" alt="Project 1">
+            <p>This web application helps users track their personal goals and achievements.</p>
+        </div>
+
+        <div class="project">
+            <h3>Project 2: Interactive Website</h3>
+            <img src="https://via.placeholder.com/500" alt="Project 2">
+            <p>An interactive website designed to improve user engagement through dynamic content.</p>
+        </div>
+
+        <div class="project">
+            <h3>Project 3: E-Commerce Platform</h3>
+            <img src="https://via.placeholder.com/500" alt="Project 3">
+            <p>This e-commerce platform allows users to buy and sell products online with ease.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <div class="footer">
+        <p>&copy; 2025 Student Portfolio Builder. All rights reserved.</p>
+    </div>
+
+</body>
+
+</html>
